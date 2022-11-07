@@ -6,12 +6,6 @@ tools {
  maven "m1"
 } 
       stages {
-        
-        stage('clone') {
-            steps{
-            git 'https://github.com/varunamaravati/Amazon.git'
-        }
-        }
         stage('build') {
 			steps {
 				sh 'mvn -f Amazon/ -DskipTests clean install'
