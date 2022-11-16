@@ -1,7 +1,9 @@
 pipeline{
     agent any 
-    
-    stages {
+    tools { 
+ maven 'm1'
+}
+     stages {
         
         stage('clone') {
             steps{
