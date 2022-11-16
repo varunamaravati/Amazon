@@ -1,9 +1,9 @@
 pipeline{
     agent {
-label "slave"
+label 'slave2'
 }
 tools { 
- maven "m1"
+ maven 'm1'
 } 
       stages {
         stage('build') {
